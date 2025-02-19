@@ -1,0 +1,149 @@
+*{
+   box-sizing: border-box; 
+   margin: 0px;
+   padding: 0px;
+}
+.chair-container{
+    width: 85%;
+    margin: auto;
+}
+.Chair-boxes{
+    display: flex;
+    flex-wrap: wrap;
+}
+.chair-col-1{
+    width: 40%;
+    overflow-y: scroll;
+}
+.chair-col-2{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+.multi-chair-pics{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+}
+.chair-images{
+    width: 28%;
+}
+.chair-card img{
+    width: 100%;
+    object-fit: cover;
+}
+.chair-recommend{
+    text-orientation:mixed ;
+    writing-mode: vertical-rl;
+    align-self: center;
+    padding: 0px 20px;
+}
+.img-discription{
+    text-align: center;
+}
+.discription-heading{
+    display: ruby;
+    margin-bottom: 40px;
+}
+.tittle{
+    margin-top: 20px;
+    display: flex;
+    gap: 22px;
+    font-size: 25px;
+    color: black;
+    height: 8pc;
+}
+.tittle-box{
+    background-color: #f1f1f0;
+    padding: 10px 80px;
+}
+.tittle i{
+    color: darkgray;
+    font-size: 35px;
+}
+.like{
+    margin-top: 20px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: end;
+    margin-bottom:10pc;
+    padding-right: 20px;
+}
+.like i{
+    color: red;
+}
+.bottom-bar{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+.zoom{
+    display: flex;
+    gap: 10px;
+}
+.bar-right{
+    display: flex;
+    gap: 20px;
+}
+.hot-seat{
+    width: 80%;
+    margin: auto;
+}
+.hot-seat img{
+    height: 400px;
+    width: 100%;
+    object-fit: contain;
+}
+.discription p{
+    color: darkgray;
+    margin-top: 40px;
+}
+.zoom span{
+    border: 2px solid darkgray;
+    border-radius: 50%;
+    padding: 1px;
+}
+.zoom i{
+    padding: 1px;
+    color: darkgray;
+}
+.chair-card{
+    height: 200px;
+}
+
+@media screen and (max-width: 991px){
+    .Chair-boxes{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .chair-col-2{
+        width: 100%;
+    }
+    .chair-col-1{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px){
+    .multi-chair-pics {
+        flex-direction: column;
+    }
+    .chair-recommend {
+        writing-mode: horizontal-tb;
+    }
+    .chair-images {
+        width: 100%;
+    }
+    .chair-card img {
+        object-fit: contain;
+    }
+    .chair-card {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 480spx){
+.tittle-box {
+    padding: 10px 20px;
+}
+}
